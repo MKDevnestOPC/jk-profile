@@ -22,5 +22,5 @@ jobs:
           password: "t$0^Xbf(pxrx"
           protocol: ftp
           local-dir: dist/
-          server-dir: /jugol.ctpbd.com/  # Adjust this if your root folder is different
+          # server-dir: /jugol.ctpbd.com/  # Adjust this if your root folder is different
   
