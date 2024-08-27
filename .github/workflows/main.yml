@@ -21,3 +21,5 @@ jobs:
           username: "jugol@jugol.ctpbd.com"
           password: "t$0^Xbf(pxrx"
           protocol: ftp
+        env:
+          folder: dist
