@@ -2,7 +2,7 @@
     import {ref} from "vue"
     import ProjectCardVue from "@/components/ProjectCard.vue";
     import { useData } from "@/composables/useData.js"
-    const {project} = useData();
+    const {projectItems} = useData();
 </script>
 
 <template>
@@ -13,7 +13,7 @@
         </div>
 
         <div class="grid lg:grid-cols-3 gap-8 lg:gap-16">
-            <ProjectCardVue v-for="item in project" :key="item.title" :project="item"/>
+            <ProjectCardVue v-for="item in projectItems" :key="item.title" :project="item"/>
         </div>
     </section>
 </template>
