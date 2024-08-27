@@ -125,8 +125,8 @@ export function useData(){
     const projectItems = [
         {
             id:1,
-            title:"Portfolio 1", 
-            image:Project1, desc:`Protfollio Design With Tailwind Css And Frontend Developemnt With Nuxt Js Fremwork Of Vue Js`, 
+            title:"Comfortwing Ecommerce", 
+            image:Project1, desc:`Comfortwing Is An Full Custom Ecommer Website, Bootstrap Css And Frontend Developemnt With Vue Js And Laravel Fremwork`, 
             gitHub:"https://github.com/jugol-kumar/portfolio", 
             liveLink:"https://test2.ctpse.info"
         },
