@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <div class="w-full bg-bodyColor py-20 h-auto grid grid-cols-4 gap-10">
+    <div class="w-full bg-bodyColor py-20 h-auto grid lg:grid-cols-4 place-items-center gap-10">
         <div class="w-full h-full">
           <LogoSection/>
         </div>
@@ -13,7 +13,6 @@
         </div>
         <div class="w-full h-full flex flex-col gap-6">
             <h2 class="text-xl text-gradient2 font-bold font-titleFont">Resources</h2>
-
             <div>
                 <ul class="flex flex-col gap-1">
                     <li class="group"><a class="font-semibold font-titleFont group-hover:text-orange-300 group-hover:underline transition-all duration-300" href="javascript:void(0)">Authentication</a></li>

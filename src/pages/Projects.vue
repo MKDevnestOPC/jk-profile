@@ -1,8 +1,11 @@
 <script setup>
+    import {ref} from "vue"
     import ProjectCardVue from "@/components/ProjectCard.vue";
-    import {useData} from '@/composables/useData.js'
-    const {projectItems} = useData();
 
+    const project = ref([])
+    fetch('/data.json')
+      .then(response => response.json())
+      .then(data => project.value = data.projectItems).catch(error => console.error('Error fetching data:', error));
 </script>
 
 <template>
@@ -12,8 +15,8 @@
             <h1 class="text-gradient2 text-4xl font-bold font-titleFont">Example My acknowledge.</h1>
         </div>
 
-        <div class="grid grid-cols-3 gap-16">
-            <ProjectCardVue v-for="item in projectItems" :key="item.title" :project="item"/>
+        <div class="grid lg:grid-cols-3 gap-8 lg:gap-16">
+            <ProjectCardVue v-for="item in project" :key="item.title" :project="item"/>
         </div>
     </section>
 </template>

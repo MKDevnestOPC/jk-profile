@@ -14,8 +14,8 @@
     
       <swiper-slide v-for="item in testimunialItems" :key="item.title">
         <div class="w-full">
-            <div class="w-full h-[500px] flex justify-between">
-                <div class="w-[35%] h-full bg-gradient-to-r shadow-shadowOne from-[#1e2024] to-[#23272b] p-8">
+            <div class="w-full lg:h-[500px] flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between">
+                <div class="w-full lg:w-[35%] h-full bg-gradient-to-r shadow-shadowOne from-[#1e2024] to-[#23272b] p-8">
                     <img :src="item.image" alt="" class="h-72 rounded-lg object-cover">
 
                     <div class="flex flex-col gap-4 items-start text-left mt-3">
@@ -26,10 +26,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-[60%] h-full flex flex-col justify-between text-left">
-                    <img class="w-[20%]" :src="qutImage" alt="">
-                    <div class="w-full h-[70%] py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] rounded-lg shadow-shadowOne p-8">
-                        <div class="flex items-center justify-between border-b-[2px] border-b-gray-300 border-opacity-25 py-8">
+                <div class="w-full lg:w-[60%] h-full flex flex-col justify-between text-left">
+                    <img class="hidden lg:block w-[20%]" :src="qutImage" alt="">
+                    <div class="w-full h-[70%] lg:py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] rounded-lg shadow-shadowOne p-5 lg:p-8">
+                        <div class="flex items-center justify-between border-b-[2px] border-b-gray-300 border-opacity-25 py-5 lg:py-8">
                             <div>
                                 <h1 class="text-lg font-bold text-gradient2">{{ item.title }}</h1>
                                 <p class="text-sm font-normal">via {{ item.via }} - {{ item.timeLine }}</p>
@@ -38,7 +38,7 @@
                                 <IconStarVue v-for="item in item.star" :key="item"/>
                             </div>
                         </div>
-                        <div class="py-8 text-justify">
+                        <div class="py-5 lg:py-8 text-justify">
                             <p>{{ item.desc }}</p>
                         </div>
                     </div>

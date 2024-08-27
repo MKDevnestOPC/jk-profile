@@ -11,9 +11,9 @@ const {designSkills, developmentSkills} = useData();
     :initial="{
       opacity: 0,
     }"
-    :enter="{
+    :enter="{ 
       opacity: 1,
-    }"  class="flex items-start gap-20">
+    }"  class="flex flex-col lg:flex-row lg:items-start lg:gap-20 mb-12 lg:mb-0">
             <div class="flex-1">
             <div class="py-12 font-titleFont gap-6 flex flex-col">
                 <p class="text-sm text-orange-200 tracking-[4px]">Features</p>
@@ -25,16 +25,11 @@ const {designSkills, developmentSkills} = useData();
             </div>
         </div>
 
-
-
-
-
         <div class="flex-1">
             <div class="py-12 font-titleFont gap-6 flex flex-col">
                 <p class="text-sm text-orange-200 tracking-[4px]">Features</p>
                 <h2 class="capitalize text-gradient2 text-4xl font-bold">Backend Development</h2>
             </div>
-
 
             <div class="mt-10 w-full flex flex-col gap-1">
                 <SkillItem v-for="item in developmentSkills" :key="item.title" :skill="item"/>

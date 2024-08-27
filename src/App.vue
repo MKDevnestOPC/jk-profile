@@ -11,8 +11,8 @@ import Footer from "@/pages/footer/Footer.vue"
 </script>
 
 <template> 
- <Navbar class="px-4"/>   
-<div class="max-w-screen-2xl h-auto px-16 mx-auto bg-bodyColor text-lightText">
+ <Navbar class="px-4 max-w-screen-2xl"/>   
+<div class="overflow-hidden max-w-screen-2xl h-auto p-2 lg:px-16 mx-auto bg-bodyColor text-lightText">
   <Home/>
   <Feature/>  
   <About/>

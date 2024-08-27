@@ -20,6 +20,15 @@ export default {
       boxShadow: {
         shadowOne: "10px 10px 19px #1c1e22, -10px -10px 19px #262a2e",
       },
+      screens:{
+        xs: "320px",
+        sm: "375px",
+        sml: "500px",
+        md: "667px",
+        lg: "960px",
+        lgl: "1024",
+        xl: "1280px"
+      }
     },
   },
   plugins: [],

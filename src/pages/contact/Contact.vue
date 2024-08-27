@@ -19,7 +19,7 @@
 
         
         <div class="w-full">
-            <div class="w-full h-auto flex justify-between rounded-xl text-left">
+            <div class="w-full h-auto flex flex-col lg:gap-0 gap-10 lg:flex-row justify-between rounded-xl text-left">
                <LeftCard/>
                <RightForm/>
             </div>

@@ -11,7 +11,7 @@
 
 
 <template>
-    <div class="w-full px-12 py-10 cursor-pointer rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[#1e2024] group hover:bg-gradient-to-b hover:to-[#1e2024] hover:from-black transition-colors duration-100 gap-5 h-72 overflow-hidden">
+    <div class="w-full px-5 py-5 lg:px-12 lg:py-10 cursor-pointer rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[#1e2024] group hover:bg-gradient-to-b hover:to-[#1e2024] hover:from-black transition-colors duration-100 gap-5 h-72 overflow-hidden">
         <div class="flex flex-col gap-6 translate-y-7 group-hover:-translate-y-5 transition-all duration-700">
             <div>
                 <component class="text-4xl text-orange-400" :is="props.item.icon"/>

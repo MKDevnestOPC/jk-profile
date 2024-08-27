@@ -12,7 +12,7 @@ const setItem = (event) => setRef.value = event;
 </script>
 
 <template>
-    <section id="resume" class="w-full py-20  border-b border-gray-600">
+    <section id="resume" class="w-full h-auto lg:py-20 border-b border-gray-600">
         <div class="mb-10">
             <h3 class="capitalize">resume</h3>
             <h1 class="text-gradient2 text-4xl font-bold font-titleFont">My Life Story.</h1>
@@ -20,8 +20,8 @@ const setItem = (event) => setRef.value = event;
 
 
         <div>
-            <ul class="capitalize w-full grid grid-cols-3">
-                <li @click="setItem('education')" class="skillItem" :class="setRef === 'education' ? 'border-none shadow-shadowOne' : 'border-none'">Eucation</li>
+            <ul class="capitalize w-full grid md:grid-cols-3">
+                <li @click="setItem('education')" class="skillItem" :class="setRef === 'education' ? 'border-none shadow-shadowOne' : 'border-none'">Education</li>
                 <li @click="setItem('skills')" class="skillItem" :class="setRef === 'skills' ? 'border-none shadow-shadowOne' : 'border-none'">Professional skills</li>
                 <li @click="setItem('exprience')" class="skillItem" :class="setRef === 'exprience' ? 'border-none shadow-shadowOne' : 'border-none'">experience</li>
                 <!-- <li @click="setItem('achivment')" class="skillItem" :class="setRef === 'achivment' ? 'border-none shadow-shadowOne' : 'border-none'">achievement</li> -->

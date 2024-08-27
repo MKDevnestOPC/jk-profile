@@ -2,6 +2,7 @@ import logoImg from '@/assets/images/logo-img.png'
 import logoTrns from '@/assets/images/logo-trans.png'
 import profile from '@/assets/images/bannerImg.png'
 import aboutImg from "@/assets/images/about-bg.jpeg"
+import gitBg from "@/assets/images/gitBg.jpg"
 
 import IconFacebook from "@/components/icons/IconFacebook.vue";
 import IconInstagram from "@/components/icons/IconInstagram.vue";
@@ -122,15 +123,77 @@ export function useData(){
     // project items
 
     const projectItems = [
-        {title:"Portfolio 1", image:Project1, desc:`Protfollio Design With Tailwind Css And Frontend Developemnt With Nuxt Js Fremwork Of Vue Js`},
-        {title:"Portfolio 1", image:Project2, desc:`Personal Profollio Website Design Wwith Tailwind Css And Fontend Development With Vue js.`},
-        {title:"Ecommerce", image:Project3, desc:`Peradise Single Vendor Ecommerce Website. Development With Backend Laravel, Frontend Vue Js And Request System Inertia. Also Javascript And Animatino Css`},
-        {title:"Medicine Selling", image:Project4, desc:`This Is An Medicine Selling Website Developed By Me , Using Technalogy Is Backend Laravel, Frontend Laravel Blade And Jquery Javascript. Ajax Request System.`},
-        {title:"Grocery Ecommerce", image:Project5, desc:`Grocery Ecommerce Website, Design Technalogy Is For Design Tailwind Css And Frontend Development By Nuxt 3 Backend With Laravel Restfull Api, JWT Login Secqurity.`},
-        {title:"Grocery Ecommerce", image:Project6, desc:`This is also Grocery Ecommerce website for selling altipe grocery products. Frontend Development by vue js and request system is inertia. Backend development by laravel latest.`},
-        {title:"Ecommerce Backend", image:Project7, desc:`This backend for the single vendor ecommerce website develop by laravel with restfull api.`},
-        {title:"Shopping Ecommerce", image:Project8, desc:`This Single Vendor Ecommerce website develop for selling garments products. Using Technalogy is backend larave, frontend vue js and request system ins inertia`},
-        {title:"customer relationship management", image:Project9, desc:`customer relationship management Project Develop by Laravel, Vue Js , Inertia, Etc.`},
+        {
+            id:1,
+            title:"Portfolio 1", 
+            image:Project1, desc:`Protfollio Design With Tailwind Css And Frontend Developemnt With Nuxt Js Fremwork Of Vue Js`, 
+            gitHub:"https://github.com/jugol-kumar/portfolio", 
+            liveLink:"https://test2.ctpse.info"
+        },
+        {
+            id:2,
+            title:"Portfolio 1", 
+            image:Project2, 
+            desc:`Personal Profollio Website Design Wwith Tailwind Css And Fontend Development With Vue js.`, 
+            gitHub:"https://github.com/jugol-kumar/portfolio",
+            liveLink:"https://test2.ctpse.info"
+        },
+        {
+            id:3,
+            title:"Ecommerce", 
+            image:Project3,
+            desc:`Peradise Single Vendor Ecommerce Website. Development With Backend Laravel, Frontend Vue Js And Request System Inertia. Also Javascript And Animatino Css`, gitHub:"#", 
+            gitHub:"https://github.com/jugol-kumar/chaldal-se",
+            liveLink:"https://psc.gomkgo.com"
+        },
+        {
+            id:4,
+            title:"Medicine Selling", 
+            image:Project4, 
+            desc:`This Is An Medicine Selling Website Developed By Me , Using Technalogy Is Backend Laravel, Frontend Laravel Blade And Jquery Javascript. Ajax Request System`, gitHub:"#",
+            gitHub:"https://github.com/jugol-kumar/Bangla-mads",
+            liveLink:"https://medihelp24.com/"
+        },
+        {
+            id:5,
+            title:"Grocery Ecommerce", 
+            image:Project5,
+            desc:`Grocery Ecommerce Website, Design Technalogy Is For Design Tailwind Css And Frontend Development By Nuxt 3 Backend With Laravel Restfull Api, JWT Login Secqurity.`,
+            gitHub:"https://github.com/jugol-kumar/Tailwindcss",
+            liveLink:"#"
+        },
+        {
+            id:6,
+            title:"Grocery Ecommerce", 
+            image:Project6, 
+            desc:`This is also Grocery Ecommerce website for selling altipe grocery products. Frontend Development by vue js and request system is inertia. Backend development by laravel latest.`,
+            gitHub:"https://github.com/jugol-kumar/ctp-ecommerce",
+            liveLink:"http://test.amblefashion.com/"
+        },
+        {
+            id:7,
+            title:"Ecommerce Backend", 
+            image:Project7, 
+            desc:`This backend for the single vendor ecommerce website develop by laravel with restfull api.`,
+            gitHub:"https://github.com/jugol-kumar/ctp-ecommerce",
+            liveLink:"#"
+        },
+        {
+            id:8,
+            title:"Shopping Ecommerce", 
+            image:Project8, 
+            desc:`This Single Vendor Ecommerce website develop for selling garments products. Using Technalogy is backend larave, frontend vue js and request system ins inertia`,
+            gitHub:"https://github.com/jugol-kumar/ctp-ecommerce",
+            liveLink:"https://amblefashion.com/",
+        },
+        {
+            id:9,
+            title:"customer relationship management", 
+            image:Project9, 
+            desc:`customer relationship management Project Develop by Laravel, Vue Js , Inertia, Etc.`,
+            gitHub:"https://github.com/jugol-kumar/ctp-crm",
+            liveLink:"https://crm.ctpse.info/"
+        },
     ]
 
     // resume items
@@ -219,7 +282,16 @@ export function useData(){
         
      ]
 
+    const contactData = {
+        name:"Jugol Kumar",
+        subTitle:"Full Stuck Developer",
+        img:gitBg,
+        phone:"+008 01723 717933",
+        email:"Jugolkumar23@gmail.com",
+        about:"HELLO EVERYONE. IM SRI JUGOL KUMAR. AS A WEB-DEVELOPER. I LIKE DEVELOPMENT WEBSITE WITH LARAVEL FREMWORK . USING VUE JS JAVASCRIPT FREMWORK FOR FORNT SIDE.",
+    }
 
 
-    return {navItems, logoImg, logoTrns, userData,socalMedias, profile, aboutInfo, cvLink, aboutMe, featureItems, aboutImg, projectItems, educationLavel, trainingQualification, jobExprience, designSkills, developmentSkills, companyExprience, testimunialItems};
+
+    return {navItems, logoImg, logoTrns, userData,socalMedias, profile, aboutInfo, cvLink, aboutMe, featureItems, aboutImg, projectItems, educationLavel, trainingQualification, jobExprience, designSkills, developmentSkills, companyExprience, testimunialItems, contactData};
 }

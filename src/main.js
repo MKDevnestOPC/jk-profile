@@ -33,7 +33,6 @@ app.mount('#app')
 
 
 const sections = document.querySelectorAll("section[id]");
-console.log(sections)
 window.addEventListener("scroll", navHighlighter);
 
 function navHighlighter() {
