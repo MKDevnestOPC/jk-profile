@@ -1,11 +1,8 @@
 <script setup>
     import {ref} from "vue"
     import ProjectCardVue from "@/components/ProjectCard.vue";
-
-    const project = ref([])
-    fetch('/data.json')
-      .then(response => response.json())
-      .then(data => project.value = data.projectItems).catch(error => console.error('Error fetching data:', error));
+    import { useData } from "@/composables/useData.js"
+    const {project} = useData();
 </script>
 
 <template>
