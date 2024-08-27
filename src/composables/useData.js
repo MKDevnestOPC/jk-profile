@@ -127,8 +127,8 @@ export function useData(){
             id:1,
             title:"Comfortwing Ecommerce", 
             image:Project1, desc:`Comfortwing Is An Full Custom Ecommer Website, Bootstrap Css And Frontend Developemnt With Vue Js And Laravel Fremwork`, 
-            gitHub:"https://github.com/jugol-kumar/portfolio", 
-            liveLink:"https://test2.ctpse.info"
+            gitHub:"#", 
+            liveLink:"https://comfortwing.com/"
         },
         {
             id:2,
