@@ -21,5 +21,6 @@ jobs:
           username: "jugol@jugol.ctpbd.com"
           password: "t$0^Xbf(pxrx"
           protocol: ftp
-        env:
-          folder: dist
+          local-dir: dist/
+          server-dir: /jugol.ctpbd.com/  # Adjust this if your root folder is different
+  
